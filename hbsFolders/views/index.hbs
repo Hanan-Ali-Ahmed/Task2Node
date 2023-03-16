@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+   
+    <title>Info</title>
+    <style>
+
+        :root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240deg 6.67% 40.6%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(223, 223, 238);
+    --cardBG: rgb(225, 225, 235);
+}
+
+
+          .sec2{
+           position: absolute;
+           margin: 240px 478px;}
+          .contentSec2{
+            margin: 30px 140px; 
+        }
+        .contentSec2 h2{
+            color : var(--textColor)
+        }
+            .contentSec2 h2:hover {
+              color: var(--PrimaryColor);
+              cursor: pointer;
+            }
+             .titt{
+      font-size: 26px;
+    color: var(--PrimaryColor);
+    cursor: pointer;
+    position: absolute;
+    margin: 201px 464px;
+
+     }
+     
+    
+    </style>
+</head>
+<body>
+    <h1 class="titt">{{title}}</h1>
+        <div class="sec2">
+       <h2 class="header-sec">{{>header}}</h2>
+        <h2 class="header-sec">{{>footer}}</h2>
+       <div class="contentSec2">
+        <h2>{{name}}</h2>
+        <h2>{{age}}</h2>
+        <h2>{{city}}</h2>
+        <h2>{{lectures}}</h2> 
+        <h2>{{average}}</h2>
+         </div>
+         </div>
+        
+</body>
+</html>

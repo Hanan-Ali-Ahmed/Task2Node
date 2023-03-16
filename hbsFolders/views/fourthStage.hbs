@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FourthStage</title>
+    <style>
+      
+          .tab1{
+           margin: 290px 0px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+          }
+         th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #3c3636;
+  
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+ th:hover , td:hover{
+     color: var(--PrimaryColor);
+              cursor: pointer;
+ }
+tr:nth-child(even) {
+  background-color: #cfcff7;
+}
+            .sec2{
+           position: absolute;
+           margin: 200px 478px;}
+          
+           .titt{
+      font-size: 26px;
+    color: var(--PrimaryColor);
+    cursor: pointer;
+    position: absolute;
+    margin: -78px 567px;
+     }
+    
+        .top-students{
+          margin: -202px 0px;
+  
+        }
+     .top-students h2{
+      padding: 20px 0px;
+    text-align: center;
+    color: hsl(199deg 28.89% 42.76%);
+    text-shadow: 4px 4px 5px var(--PrimaryColor);
+     font-size: 30px;
+    font-style: oblique;
+
+     }
+
+     .sec-table{
+      margin: auto;
+    width: 35%;
+     }
+    </style>
+</head>
+<body>
+    <h1 class="titt">{{title}}</h1>
+    <div class="back-img1">
+      
+    </div>
+        <div class="sec2">
+       <h2 class="header-sec">{{>header}}</h2> 
+        <h2 class="header-sec">{{>footer}}</h2>
+       </div>
+     <table class="tab1">
+  <tr>
+    <th>{{id}}</th>
+    <th>{{name}}</th>
+    <th>{{age}}</th>
+    <th>{{city}}</th>
+    <th>{{lecture1}}</th>
+    <th>{{lecture2}}</th>
+    <th>{{lecture3}}</th>
+    <th>{{average}}</th>
+
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Naser Nather Ali</td>
+    <td>22</td>
+    <td>Mousel</td>
+    <td>95</td>
+    <td>99</td>
+    <td>80</td>
+    <td>91.33</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>Othman Farhad Mohamed</td>
+    <td>22</td>
+    <td>Mousel</td>
+    <td>77</td>
+    <td>88</td>
+    <td>77</td>
+    <td>80.66</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Nahla Marza Ezoo</td>
+    <td>23</td>
+    <td>Baghdad</td>
+    <td>100</td>
+    <td>99</td>
+    <td>84</td>
+    <td>94.33</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Mohamed Taher Kamel</td>
+    <td>22</td>
+    <td>Baghdad</td>
+    <td>90</td>
+    <td>88</td>
+    <td>77</td>
+    <td>85</td>
+  </tr>
+  
+  <tr>
+    <td>5</td>
+    <td>Falah Fuad Hisen</td>
+     <td>22</td>
+    <td>Arbil</td>
+    <td>87</td>
+    <td>88</td>
+    <td>93</td>
+    <td>89.33</td>
+  </tr>
+  
+ 
+  <tr>
+    <td>6</td>
+    <td>Sheren Omran Majed</td>
+     <td>23</td>
+    <td>Karbala</td>
+    <td>90</td>
+    <td>88</td>
+    <td>77</td>
+    <td>85</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Hasan Yones Saad</td>
+    <td>22</td>
+     <td>Baghdad</td>
+    <td>76</td>
+    <td>88</td>
+    <td>89</td>
+    <td>84.33</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Mohamed Mustafa Rashed</td>
+     <td>22</td>
+    <td>Baghdad</td>
+    <td>93</td>
+    <td>88</td>
+    <td>72</td>
+    <td>84.33</td>
+  </tr>
+  
+     <tr>
+    <td>9</td>
+    <td>Hala Ahmed Waleed</td>
+    <td>22</td>
+     <td>Karkok</td>
+    <td>99</td>
+    <td>66</td>
+    <td>77</td>
+    <td>80.66</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Salam Saad Othman</td>
+    <td>22</td>
+     <td>Baghdad</td>
+    <td>80</td>
+    <td>85</td>
+    <td>79</td>
+    <td>81.33</td>
+  </tr>
+   <tr>
+    <td>11</td>
+    <td>Mayada Omar Ali</td>
+    <td>22</td>
+     <td>Arbil</td>
+    <td>88</td>
+    <td>88</td>
+    <td>100</td>
+    <td>92</td>
+  </tr>
+ 
+  <tr>
+    <td>12</td>
+    <td>Maryam Saleh Hadi</td>
+    <td>22</td>
+    <td>Mousel</td>
+    <td>65</td>
+    <td>88</td>
+    <td>75</td>
+    <td>76</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Noor Ali Salem</td>
+    <td>22</td>
+     <td>Baghdad</td>
+    <td>65</td>
+    <td>89</td>
+    <td>71</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Furkan Raheem Ali</td>
+    <td>22</td>
+     <td>Basra</td>
+    <td>100</td>
+    <td>100</td>
+    <td>99</td>
+    <td>99.66</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Mahmud Mohmaed Saad</td>
+    <td>22</td>
+     <td>Arbil</td>
+    <td>94</td>
+    <td>88</td>
+    <td>93</td>
+    <td>91.66</td>
+  </tr>
+   <tr>
+    <td>16</td>
+    <td>Salma Karam Hydar</td>
+    <td>22</td>
+    <td>Baghdad</td>
+    <td>87</td>
+    <td>88</td>
+    <td>90</td>
+    <td>88.33</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Saja Abd Salih</td>
+    <td>22</td>
+    <td>Baghdad</td>
+    <td>67</td>
+    <td>88</td>
+    <td>65</td>
+    <td>73.33</td>
+  </tr>
+  
+  <tr>
+    <td>18</td>
+    <td>Baker Musa Hamad</td>
+    <td>22</td>
+     <td>Baghdad</td>
+    <td>88</td>
+    <td>90</td>
+    <td>90</td>
+    <td>89.33</td>
+  </tr>
+  
+    <tr>
+    <td>19</td>
+    <td>Muna Taha Abas</td>
+    <td>22</td>
+     <td>Mousel</td>
+    <td>77</td>
+    <td>85</td>
+    <td>100</td>
+    <td>87.33</td>
+  </tr>
+
+      <tr>
+    <td>20</td>
+    <td>Jud Mohamed Hosam</td>
+     <td>22</td>
+    <td>Arbil</td>
+    <td>97</td>
+    <td>88</td>
+    <td>71</td>
+    <td>85.33</td>
+  </tr>
+  <tr>
+</table>
+      <div class="top-students">
+        <h2>{{stud}}</h2>
+        <div class="students">
+
+         <table class="sec-table">
+          <tr>
+            <th>{{name}}</th>
+            <th>{{average}}</th>
+          </tr>
+             
+
+              <tr>
+             <td>Furkan Raheem Ali</td>
+             <td>99.66</td>
+             </tr>
+              <tr>
+             <td>Nahla Marza Ezoo</td>
+             <td>94.33</td>
+             </tr>
+              <tr>
+             <td>Mayada Omar Ali</td>
+             <td>92</td>
+             </tr>
+              <tr>
+             <td>Mahmud Mohamed Saad</td>
+             <td>91.66</td>
+             </tr>
+             <tr>
+             <td>Naser Nather Ali</td>
+             <td>91.33</td>
+             </tr>
+         </table>
+        </div>
+      </div>
+</body>
+</html>
